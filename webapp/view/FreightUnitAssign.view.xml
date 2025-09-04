@@ -4,7 +4,7 @@
      xmlns:f="sap.ui.layout.form"
      xmlns:core="sap.ui.core"
     xmlns="sap.m">
-    <Page id="page" title="Needs to be changed {i18n>title}">
+    <Page id="page" title="{i18n>title}">
     <content>
       <VBox id="idRlAppVBox" class="sapUiSmallMargin">
         <f:Form id="idRlAppForm" editable="true">
@@ -66,6 +66,8 @@
             </f:FormContainer>
           </f:formContainers>
         </f:Form>
+
+        <Text text="this needs to be delete"></Text>
       </VBox>
     </content>
     </Page>
