@@ -1,0 +1,72 @@
+<mvc:View controllerName="logrffreightordertofreightunitsui5.controller.FreightUnitAssign"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+     xmlns:f="sap.ui.layout.form"
+     xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+      <VBox id="idRlAppVBox" class="sapUiSmallMargin">
+        <f:Form id="idRlAppForm" editable="true">
+          <f:toolbar>
+            <Toolbar id="idFormToolbar">
+              <Title id="idFormTitle" text="{i18n>formTitle}" />
+            </Toolbar>
+          </f:toolbar>
+
+          <f:layout>
+            <f:ResponsiveGridLayout
+              id="idFormResponsiveGridLayout"
+              labelSpanXL="3"
+              labelSpanL="3"
+              labelSpanM="3"
+              labelSpanS="12"
+              adjustLabelSpan="false"
+              emptySpanXL="4"
+              emptySpanL="4"
+              emptySpanM="4"
+              emptySpanS="0"
+              columnsXL="1"
+              columnsL="1"
+              columnsM="1"
+              singleContainerFullSize="false" />
+          </f:layout>
+
+          <f:formContainers>
+            <f:FormContainer id="idFormContainer">
+              <f:formElements>
+
+                <f:FormElement id="idFoFormElement" label="{i18n>FreightOrder}">
+                  <f:fields>
+                    <Input id="idFreightOrderInput" maxLength="20" required="true" />
+                  </f:fields>
+                </f:FormElement>
+
+                <f:FormElement id="idSsccFormElement" label="{i18n>sscc}">
+                  <f:fields>
+                    <Input id="idSsccInput" maxLength="35" required="true" />
+                  </f:fields>
+                </f:FormElement>
+
+                <f:FormElement id="idSsccFormElementActions">
+                  <f:fields>
+                    <ToolbarSpacer id="idToolbarSpacer1" />
+                    <Button id="idAssignButton"
+                      text="{i18n>assign}"
+                      press=".onPressAssign"
+                      type="Emphasized" />
+                    <Button id="idUnAssignButton"
+                      text="{i18n>unassign}"
+                      press=".onPressUnAssign"
+                      type="Default" />
+                  </f:fields>
+                </f:FormElement>
+
+              </f:formElements>
+            </f:FormContainer>
+          </f:formContainers>
+        </f:Form>
+      </VBox>
+    </content>
+    </Page>
+</mvc:View>
