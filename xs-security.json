@@ -1,5 +1,5 @@
 {
-  "xsappname": "logrffreightordertofreightunitsui5",
+  "xsappname": "log-rf-freight-order-to-freight-units-ui5-auth",
   "tenant-mode": "dedicated",
   "description": "Security profile of called application",
   "scopes": [],

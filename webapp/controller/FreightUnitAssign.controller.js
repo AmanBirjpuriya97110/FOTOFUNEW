@@ -5,8 +5,7 @@ sap.ui.define([
   "sap/ui/core/Messaging"
 ], (Controller, MessageBox, BusyIndicator, Messaging) => {
   "use strict";
-  let oResourceModel;
-
+  let oResourceModel;                          
   return Controller.extend("logrffreightordertofreightunitsui5.controller.FreightUnitAssign", {
     onInit() {
       oResourceModel = this.getOwnerComponent().getModel("i18n").getResourceBundle();
